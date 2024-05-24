@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weeks and Months Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weeks and Months Game</h1>
+        <label for="languageSelect">Choose the language to guess:</label>
+        <select id="languageSelect" onchange="resetGame()">
+            <option value="englishToFrench">Guess French</option>
+            <option value="frenchToEnglish">Guess English</option>
+        </select>
+        <p>The word is: <span id="randomWord"></span></p>
+        <p>Enter the translation:</p>
+        <input type="text" id="guessInput" placeholder="Enter the translation">
+        <button onclick="checkGuess()">Check</button>
+        <p id="message"></p>
+        <p>Correct answers: <span id="correctCounter">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
